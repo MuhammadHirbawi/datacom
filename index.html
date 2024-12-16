@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Terms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .search {
+            margin-bottom: 20px;
+        }
+
+        .search input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .terms {
+            list-style: none;
+            padding: 0;
+        }
+
+        .term {
+            margin-bottom: 15px;
+        }
+
+        .term h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #007BFF;
+        }
+
+        .term p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Quiz Terms and Definitions</h1>
+    </header>
+
+    <div class="container">
+        <div class="search">
+            <input type="text" id="searchBox" placeholder="Search terms..." onkeyup="filterTerms()">
+        </div>
+
+        <ul class="terms" id="termsList">
+            <li class="term">
+                <h3>Bandwidth</h3>
+                <p>The frequency range, in hertz (Hz), between the upper and lower frequency limits.</p>
+            </li>
+            <li class="term">
+                <h3>Baseband</h3>
+                <p>The band of frequencies occupied by a message signal.</p>
+            </li>
+            <li class="term">
+                <h3>Frequency Translate</h3>
+                <p>The process of displacing the frequency contents of a signal to another place in the frequency spectrum.</p>
+            </li>
+            <li class="term">
+                <h3>Modulation Index (m)</h3>
+                <p>The ratio between the amplitudes of the message signal and the unmodulated carrier signal.</p>
+            </li>
+            <li class="term">
+                <h3>Percentage of Modulation (% Mod.)</h3>
+                <p>The modulation index expressed as a percentage (m x 100).</p>
+            </li>
+            <li class="term">
+                <h3>Overmodulation</h3>
+                <p>The term used when the modulation index is greater than 1. It occurs when the peak amplitude of the message signal is greater than the peak amplitude of the unmodulated carrier signal.</p>
+            </li>
+            <li class="term">
+                <h3>Transmission Efficiency</h3>
+                <p>Fraction of the total AM signal power that is contained in the sidebands.</p>
+            </li>
+            <li class="term">
+                <h3>Splatter</h3>
+                <p>Adjacent-channel interference (fake sideband frequencies) due to overmodulation of the carrier signal by abrupt peak message signals.</p>
+            </li>
+            <li class="term">
+                <h3>Spectrum Analyzer</h3>
+                <p>An instrument that can display electrical signals in the frequency domain. It graphically displays voltage as a function of frequency.</p>
+            </li>
+            <li class="term">
+                <h3>Audio</h3>
+                <p>Signals that a person can hear.</p>
+            </li>
+            <li class="term">
+                <h3>Electromagnetic Waves</h3>
+                <p>The radiant energy produced by oscillation of an electric charge.</p>
+            </li>
+            <li class="term">
+                <h3>Message Signal</h3>
+                <p>Any signal that contains information; it is also called the intelligence signal.</p>
+            </li>
+            <li class="term">
+                <h3>Audio Frequency (AF)</h3>
+                <p>Frequencies that a person can hear, ranging from about 20 Hz to 20 kHz.</p>
+            </li>
+            <li class="term">
+                <h3>Radio Frequency (RF)</h3>
+                <p>The transmission frequency of electromagnetic signals, ranging from about 300 kHz to the 1,000,000 kHz range.</p>
+            </li>
+            <li class="term">
+                <h3>Carrier Signal</h3>
+                <p>A single, high-frequency signal that can be modulated by a message signal and transmitted.</p>
+            </li>
+            <li class="term">
+                <h3>Modulation</h3>
+                <p>The process of combining the message signal with the carrier signal, causing the message signal to vary a characteristic of the carrier signal.</p>
+            </li>
+            <li class="term">
+                <h3>Demodulation</h3>
+                <p>The process of recovering or detecting the message signal from the modulated carrier frequency.</p>
+            </li>
+            <li class="term">
+                <h3>Amplitude Modulation (AM)</h3>
+                <p>The process of combining the message signal with the carrier signal and the two sidebands: the lower sideband and the upper sideband.</p>
+            </li>
+            <li class="term">
+                <h3>Frequency Modulation (FM)</h3>
+                <p>The process of combining the message signal with the carrier signal that causes the message signal to vary the frequency of the carrier signal.</p>
+            </li>
+            <li class="term">
+                <h3>Phase Modulation (PM)</h3>
+                <p>The process of combining the message signal with the carrier signal that causes the message signal to vary the phase of the carrier signal.</p>
+            </li>
+            <li class="term">
+                <h3>Harmonics</h3>
+                <p>Signals with frequencies that are an integral multiple of the fundamental frequency.</p>
+            </li>
+            <li class="term">
+                <h3>Angle Modulation</h3>
+                <p>The process of combining the message signal with the carrier signal that causes the message signal to vary the frequency and/or phase of the carrier signal.</p>
+            </li>
+            <li class="term">
+                <h3>Balanced Modulator</h3>
+                <p>An amplitude modulator that can be adjusted to control the amount of modulation.</p>
+            </li>
+            <li class="term">
+                <h3>Double-Sideband (DSB)</h3>
+                <p>An amplitude modulated signal in which the carrier is suppressed, leaving only the two sidebands: the lower sideband and the upper sideband.</p>
+            </li>
+            <li class="term">
+                <h3>Mixer</h3>
+                <p>An electronic circuit that combines two frequencies.</p>
+            </li>
+            <li class="term">
+                <h3>Product Detector</h3>
+                <p>A detector whose audio frequency output is equal to the product of the Beat Frequency Oscillator (BFO) and the RF signal inputs.</p>
+            </li>
+            <li class="term">
+                <h3>Phase Detector</h3>
+                <p>An electronic circuit whose output varies with the phase differential of the two input signals.</p>
+            </li>
+            <li class="term">
+                <h3>Envelopes</h3>
+                <p>The waveform of the amplitude variations of an amplitude modulated signal.</p>
+            </li>
+            <li class="term">
+                <h3>Sidebands</h3>
+                <p>The frequency bands on each side of the carrier frequency that are formed during modulation; the sideband frequencies contain the intelligence of the message signal.</p>
+            </li>
+            <li class="term">
+                <h3>PAM (Pulse-Amplitude Modulation)</h3>
+                <p>A modulation method in which the amplitude of each pulse sample is proportional to the amplitude of the message signal at the time of sampling.</p>
+            </li>
+            <li class="term">
+                <h3>PTM (Pulse-Time Modulation)</h3>
+                <p>A type of pulse modulation where the timing of the pulse varies with the message signal's amplitude.</p>
+            </li>
+            <li class="term">
+                <h3>PCM (Pulse-Code Modulation)</h3>
+                <p>A modulation process that produces binary serial codes for amplitude samples of the analog message signal.</p>
+            </li>
+            <li class="term">
+                <h3>Delta Modulation (DM)</h3>
+                <p>A modulation process that produces 1-bit codes that indicate an increase or decrease in the message signal's amplitude.</p>
+            </li>
+            <li class="term">
+                <h3>TDM (Time-Division Multiplexing)</h3>
+                <p>A process that transmits two or more message signals over the same line by using a different time interval (slot) for each signal.</p>
+            </li>
+            <li class="term">
+                <h3>Noise</h3>
+                <p>An unwanted signal that interferes with a communication signal.</p>
+            </li>
+            <li class="term">
+                <h3>PWM (Pulse-Width Modulation)</h3>
+                <p>A type of PTM where the pulse width varies with the message signal's amplitude.</p>
+            </li>
+            <li class="term">
+                <h3>PPM (Pulse-Position Modulation)</h3>
+                <p>A type of PTM where the pulse position varies with the message signal's amplitude.</p>
+            </li>
+            <li class="term">
+                <h3>Modulating Signal</h3>
+                <p>A signal that varies some characteristic (amplitude, frequency, or phase) of a carrier signal; in pulse modulation, the modulating signal is the message signal.</p>
+            </li>
+            <li class="term">
+                <h3>Carrier Signal</h3>
+                <p>A high-frequency transmission signal that is modulated by a message signal; in pulse modulation, the carrier signal is the sample signal.</p>
+            </li>
+            <li class="term">
+                <h3>Amplitude Samples</h3>
+                <p>Periodic pulses whose amplitudes are directly proportional to a message signal.</p>
+            </li>
+            <li class="term">
+                <h3>Analog Message Signal</h3>
+                <p>An analog signal that contains information (intelligence).</p>
+            </li>
+            <li class="term">
+                <h3>Multiplexed Signals</h3>
+                <p>Signals from different sources combined on a single transmission channel in a manner that permits independent recovery of each signal in a receiver.</p>
+            </li>
+            <li class="term">
+                <h3>Intelligence</h3>
+                <p>The information contained in a message signal.</p>
+            </li>
+            <li class="term">
+                <h3>Frame</h3>
+                <p>A period of time equal to the sampling period that is divided into smaller equal periods called time slots.</p>
+            </li>
+            <li class="term">
+                <h3>Time Slots</h3>
+                <p>Periods of time within a frame that are equal to the period of the samples.</p>
+            </li>
+            <li class="term">
+                <h3>Full-Duplex Transmission</h3>
+                <p>Transmission that can occur simultaneously in both directions between communicators.</p>
+            </li>
+            <li class="term">
+                <h3>Nyquist Rate</h3>
+                <p>The minimum theoretical sampling rate to form a pulse-modulated signal (PAM, PWM, PPM, PCM, etc.) that represents an analog signal. The Nyquist rate equals two times the maximum message signal frequency.</p>
+            </li>
+            <li class="term">
+                <h3>Time Domain</h3>
+                <p>A signal's amplitude as a function of time.</p>
+            </li>
+            <li class="term">
+                <h3>Frequency Domain</h3>
+                <p>The amplitude of a signal's frequency components as a function of frequency.</p>
+            </li>
+            <li class="term">
+                <h3>Duty Cycle Fraction (PW/T)</h3>
+                <p>The ratio of the pulse duration (PW) to the period (T).</p>
+            </li>
+            <li class="term">
+                <h3>Spectrum Analyzer</h3>
+                <p>An instrument that shows the relative power distribution of a signal as a function of frequency.</p>
+            </li>
+            <li class="term">
+                <h3>Fundamental Frequency</h3>
+                <p>The principal frequency component of a waveform or pulse signal; the frequency with the greatest amplitude.</p>
+            </li>
+            <li class="term">
+                <h3>Harmonic Frequencies</h3>
+                <p>A frequency component of a periodic waveform or pulse signal; the frequency of each harmonic is a multiple of the fundamental frequency.</p>
+            </li>
+            <li class="term">
+                <h3>Replicas</h3>
+                <p>Frequencies that are spaced around the sample pulse's fundamental (fs) and harmonic frequencies by a plus and minus range equal to the maximum message signal frequency (fm).</p>
+            </li>
+            <li class="term">
+                <h3>Frequency Response Curve</h3>
+                <p>A graphical representation of a circuit's response to different frequencies within its operating range.</p>
+            </li>
+            <li class="term">
+                <h3>Cutoff Frequency</h3>
+                <p>The frequency at which the output amplitude of a circuit (filter) is attenuated by -3dB (0.707 of the input).</p>
+            </li>
+            <li class="term">
+                <h3>Sampler Circuit</h3>
+                <p>A circuit in which the output is a series of discrete values (pulses) representing the value of the input at sampling points in time.</p>
+            </li>
+            <li class="term">
+                <h3>Natural PAM Signals</h3>
+                <p>A type of sampling in which the amplitude of each pulse follows the amplitude of the message signal at the sampling time.</p>
+            </li>
+            <li class="term">
+                <h3>Flat-Top PAM Signals</h3>
+                <p>A type of sampling in which the amplitude of each pulse remains constant during the sampling time.</p>
+            </li>
+            <li class="term">
+                <h3>Sample/Hold Circuit</h3>
+                <p>A circuit that holds the amplitude of each output pulse at a constant level between the input sampling times.</p>
+            </li>
+            <li class="term">
+                <h3>Staircase PAM Signals</h3>
+                <p>Signals that are output from a sample/hold circuit; the amplitude of each output pulse remains at a constant level between the input sampling times.</p>
+            </li>
+            <li class="term">
+                <h3>Aliasing</h3>
+                <p>A condition in a PAM signal where the lower sideband frequency (fs-fm) is less than the maximum message signal frequency (fm); aliasing is also called fold-over distortion.</p>
+            </li>
+            <li class="term">
+                <h3>Fiber Optics</h3>
+                <p>The technique of conveying light through optical fibers.</p>
+            </li>
+            <li class="term">
+                <h3>Optical Fibers</h3>
+                <p>Thin glass or plastic flexible rods through which light can propagate. These consist of an inner core and an outer cladding, and are found inside fiber-optic cables.</p>
+            </li>
+            <li class="term">
+                <h3>Data Link</h3>
+                <p>A communication link that allows the transfer of digital data.</p>
+            </li>
+            <li class="term">
+                <h3>Handshaking</h3>
+                <p>A method of data-flow control between two stations during the exchange of information.</p>
+            </li>
+            <li class="term">
+                <h3>Manchester</h3>
+                <p>A method of biphase line coding where data bits are combined with the bit clock through an exclusive-OR (XOR) function. Manchester encoding produces a signal transition during each bit time.</p>
+            </li>
+            <li class="term">
+                <h3>FPGA</h3>
+                <p>A high-density integrated-circuit (IC) that can be user-configured to create a custom IC with user-defined logic functions.</p>
+            </li>
+            <li class="term">
+                <h3>Infrared</h3>
+                <p>A form of radiant energy with wavelengths between 770 nm and 1 mm, which is just below the visible light region of the electromagnetic spectrum; a type of invisible light.</p>
+            </li>
+            <li class="term">
+                <h3>IRED</h3>
+                <p>An LED type of output transducer that emits infrared light instead of visible light when forward biased.</p>
+            </li>
+            <li class="term">
+                <h3>Multimode Fibers</h3>
+                <p>Types of optical fibers that provide many propagation paths for light. They are used with an LED light source.</p>
+            </li>
+            <li class="term">
+                <h3>Simplex Cables</h3>
+                <p>A type of fiber-optic cable that contains only one optical fiber.</p>
+            </li>
+            <li class="term">
+                <h3>Phototransistor</h3>
+                <p>A light-sensitive transistor whose collector current is directly related to light intensity.</p>
+            </li>
+            <li class="term">
+                <h3>Photodiode</h3>
+                <p>A light-sensitive diode whose conduction is directly related to light intensity.</p>
+            </li>
+            
